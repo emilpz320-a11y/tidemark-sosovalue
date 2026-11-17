@@ -1,0 +1,33 @@
+name: agent-run
+# Runs the Tidemark agent on a schedule and publishes the snapshot that the dashboard reads.
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: agent-run
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Unit tests
+        run: npm test
+      - name: Agent run (SoSoValue -> signals -> SoDEX-priced tickets)
+        env:
+          SOSO_API_KEY: ${{ secrets.SOSO_API_KEY }}
+        run: node src/run.mjs
+      - name: Publish snapshot
+        run: |
+          git config user.name "tidemark-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "agent run $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

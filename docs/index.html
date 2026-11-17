@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tidemark Desk</title>
+  <meta name="description" content="An agentic one-person crypto desk: SoSoValue data in, explained signals and SoDEX-priced, confirm-before-send tickets out.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f766e'/%3E%3Cpath d='M5 19c4 0 4-5 8-5s4 5 8 5 4-5 6-5' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-row">
+      <div class="brand">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7"/><path d="M5 19c4 0 4-5 8-5s4 5 8 5 4-5 6-5"/></svg>
+        <div>
+          <strong>Tidemark</strong>
+          <span>agentic rotation desk · SoSoValue × SoDEX</span>
+        </div>
+      </div>
+      <div class="meta" id="meta">Loading the latest agent run…</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="brief card" id="brief" aria-live="polite"></section>
+
+    <section>
+      <div class="section-head">
+        <h2>Tickets awaiting confirmation</h2>
+        <p>Priced against live SoDEX order books. Nothing is sent: confirming records a <em>paper</em> fill in your browser.</p>
+      </div>
+      <div id="tickets" class="tickets"></div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Signals</h2>
+        <div class="filters" role="tablist" aria-label="Filter signals">
+          <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="chip" data-filter="action" role="tab" aria-selected="false">Actionable</button>
+          <button class="chip" data-filter="major" role="tab" aria-selected="false">Majors</button>
+          <button class="chip" data-filter="index" role="tab" aria-selected="false">SSI indices</button>
+        </div>
+      </div>
+      <div id="signals" class="signals"></div>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h2>Paper track record</h2>
+        <p class="muted small">Every ticket the agent proposed, marked to the current SoDEX price as if it had been confirmed.</p>
+        <div id="track"></div>
+      </div>
+      <div class="card">
+        <h2>Your paper blotter</h2>
+        <p class="muted small">Tickets you confirmed on this device. Stored only in your browser.</p>
+        <div id="blotter"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Macro &amp; risk guardrails</h2>
+      <div id="risk" class="risk-grid"></div>
+    </section>
+
+    <section class="card how">
+      <h2>How the agent works</h2>
+      <ol class="pipeline">
+        <li><b>Collect</b> SoSoValue API: spot-ETF flows, coin &amp; SSI index snapshots, sector spotlight, news feed, macro calendar, FOMC odds.</li>
+        <li><b>Score</b> each asset on flows, momentum, sector breadth, news sentiment and market regime (each −1…+1, with the evidence kept).</li>
+        <li><b>Decide</b> BUY / SELL / HOLD with a confidence that rewards factor agreement and shrinks before macro events.</li>
+        <li><b>Size</b> with a 1% risk budget, volatility-based stops, position and gross-exposure caps.</li>
+        <li><b>Price</b> by walking the live SoDEX order book: spread, slippage, fill ratio. Thin books or high slippage block the ticket.</li>
+        <li><b>Confirm</b>: a human approves every ticket. Every run is replayed in the paper track record.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <span>Data: <a href="https://sosovalue.com" rel="noopener">SoSoValue API</a> · Order books: <a href="https://sodex.com" rel="noopener">SoDEX</a> (read-only)</span>
+    <span>Research demo, not financial advice. <a href="https://github.com/emilpz320-a11y/tidemark-sosovalue" rel="noopener">Source on GitHub</a></span>
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

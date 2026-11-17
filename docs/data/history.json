@@ -1,0 +1,94 @@
+{
+  "runs": [
+    {
+      "at": "2026-11-17T10:04:44.155Z",
+      "regime": "NEUTRAL",
+      "macroRisk": 0,
+      "signals": [
+        {
+          "id": "BTC",
+          "score": -0.256,
+          "confidence": 0.35,
+          "stance": "SELL",
+          "price": 64417.61
+        },
+        {
+          "id": "ETH",
+          "score": -0.387,
+          "confidence": 0.62,
+          "stance": "SELL",
+          "price": 1808.93
+        },
+        {
+          "id": "SOL",
+          "score": 0.006,
+          "confidence": 0.01,
+          "stance": "HOLD",
+          "price": 72.67
+        },
+        {
+          "id": "ssiMAG7",
+          "score": -0.469,
+          "confidence": 0.56,
+          "stance": "SELL",
+          "price": 11.353431449145
+        },
+        {
+          "id": "ssiDeFi",
+          "score": -0.114,
+          "confidence": 0.12,
+          "stance": "HOLD",
+          "price": 6.587597242521
+        },
+        {
+          "id": "ssiMeme",
+          "score": -0.266,
+          "confidence": 0.29,
+          "stance": "SELL",
+          "price": 5.197123592167
+        },
+        {
+          "id": "ssiAI",
+          "score": -0.209,
+          "confidence": 0.27,
+          "stance": "SELL",
+          "price": 3.301884845175
+        },
+        {
+          "id": "ssiLayer1",
+          "score": -0.263,
+          "confidence": 0.29,
+          "stance": "SELL",
+          "price": 7.94892070759
+        },
+        {
+          "id": "ssiRWA",
+          "score": -0.31,
+          "confidence": 0.4,
+          "stance": "SELL",
+          "price": 4.073117561
+        }
+      ],
+      "tickets": [
+        {
+          "id": "tm-3915ff80",
+          "asset": "ETH",
+          "symbol": "ETH-USD",
+          "side": "SELL",
+          "notional": 937.26,
+          "entry": 1807.5,
+          "stop": 1927.1565
+        },
+        {
+          "id": "tm-74839634",
+          "asset": "BTC",
+          "symbol": "BTC-USD",
+          "side": "SELL",
+          "notional": 839.33,
+          "entry": 64384,
+          "stop": 67068.8128
+        }
+      ]
+    }
+  ]
+}
