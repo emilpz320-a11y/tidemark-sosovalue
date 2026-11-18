@@ -179,6 +179,96 @@
           "stop": 1933.8970199999999
         }
       ]
+    },
+    {
+      "at": "2026-11-18T01:27:01.424Z",
+      "regime": "NEUTRAL",
+      "macroRisk": 0,
+      "signals": [
+        {
+          "id": "BTC",
+          "score": -0.211,
+          "confidence": 0.34,
+          "stance": "SELL",
+          "price": 64539.51
+        },
+        {
+          "id": "ETH",
+          "score": -0.116,
+          "confidence": 0.13,
+          "stance": "HOLD",
+          "price": 1811.79
+        },
+        {
+          "id": "SOL",
+          "score": 0.231,
+          "confidence": 0.26,
+          "stance": "BUY",
+          "price": 74.55
+        },
+        {
+          "id": "ssiMAG7",
+          "score": -0.447,
+          "confidence": 0.54,
+          "stance": "SELL",
+          "price": 11.403901635022
+        },
+        {
+          "id": "ssiDeFi",
+          "score": -0.313,
+          "confidence": 0.43,
+          "stance": "SELL",
+          "price": 6.600426143319
+        },
+        {
+          "id": "ssiMeme",
+          "score": -0.355,
+          "confidence": 0.57,
+          "stance": "SELL",
+          "price": 5.234602403817
+        },
+        {
+          "id": "ssiAI",
+          "score": -0.019,
+          "confidence": 0.02,
+          "stance": "HOLD",
+          "price": 3.377000774345
+        },
+        {
+          "id": "ssiLayer1",
+          "score": -0.281,
+          "confidence": 0.31,
+          "stance": "SELL",
+          "price": 7.994369232225
+        },
+        {
+          "id": "ssiRWA",
+          "score": -0.253,
+          "confidence": 0.34,
+          "stance": "SELL",
+          "price": 4.12585923692
+        }
+      ],
+      "tickets": [
+        {
+          "id": "tm-0bfeb500",
+          "asset": "BTC",
+          "symbol": "BTC-USD",
+          "side": "SELL",
+          "notional": 693.17,
+          "entry": 64509,
+          "stop": 67669.94099999999
+        },
+        {
+          "id": "tm-6e62fed5",
+          "asset": "SOL",
+          "symbol": "SOL-USD",
+          "side": "BUY",
+          "notional": 274.26,
+          "entry": 74.51,
+          "stop": 67.44645200000001
+        }
+      ]
     }
   ]
 }
