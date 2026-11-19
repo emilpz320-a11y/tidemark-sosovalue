@@ -791,6 +791,87 @@
           "stop": 66896.7579
         }
       ]
+    },
+    {
+      "at": "2026-11-19T19:10:13.828Z",
+      "regime": "RISK-OFF",
+      "macroRisk": 0,
+      "signals": [
+        {
+          "id": "BTC",
+          "score": -0.269,
+          "confidence": 0.37,
+          "stance": "SELL",
+          "price": 62780.8
+        },
+        {
+          "id": "ETH",
+          "score": -0.143,
+          "confidence": 0.19,
+          "stance": "HOLD",
+          "price": 1775.32
+        },
+        {
+          "id": "SOL",
+          "score": 0.148,
+          "confidence": 0.2,
+          "stance": "HOLD",
+          "price": 73.9
+        },
+        {
+          "id": "ssiMAG7",
+          "score": -0.456,
+          "confidence": 0.44,
+          "stance": "SELL",
+          "price": 11.116055991795
+        },
+        {
+          "id": "ssiDeFi",
+          "score": -0.426,
+          "confidence": 0.58,
+          "stance": "SELL",
+          "price": 6.376265969743
+        },
+        {
+          "id": "ssiMeme",
+          "score": -0.481,
+          "confidence": 0.65,
+          "stance": "SELL",
+          "price": 5.16468851517
+        },
+        {
+          "id": "ssiAI",
+          "score": -0.323,
+          "confidence": 0.44,
+          "stance": "SELL",
+          "price": 3.497940929033
+        },
+        {
+          "id": "ssiLayer1",
+          "score": -0.186,
+          "confidence": 0.21,
+          "stance": "HOLD",
+          "price": 7.859310959233
+        },
+        {
+          "id": "ssiRWA",
+          "score": -0.658,
+          "confidence": 0.85,
+          "stance": "SELL",
+          "price": 3.700393957852
+        }
+      ],
+      "tickets": [
+        {
+          "id": "tm-45e8f035",
+          "asset": "BTC",
+          "symbol": "BTC-USD",
+          "side": "SELL",
+          "notional": 768.43,
+          "entry": 62736,
+          "stop": 65759.8752
+        }
+      ]
     }
   ]
 }
