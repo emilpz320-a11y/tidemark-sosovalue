@@ -1,17 +1,17 @@
 {
   "project": "Tidemark",
   "version": 1,
-  "generatedAt": "2026-11-23T01:25:27.870Z",
+  "generatedAt": "2026-11-23T07:46:41.068Z",
   "sources": {
     "sosovalueCalls": 21,
     "sodex": "mainnet public order books (read-only)"
   },
   "regime": {
-    "score": -0.383,
+    "score": -0.191,
     "available": true,
-    "label": "RISK-OFF",
-    "marketCapChange24h": 0.010117207,
-    "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+    "label": "NEUTRAL",
+    "marketCapChange24h": 0.034234941,
+    "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
   },
   "macro": {
     "risk": 0.75,
@@ -19,33 +19,33 @@
       {
         "date": "2026-11-24",
         "event": "Core PCE Price Index (MoM)",
-        "hours": 36
+        "hours": 30
       },
       {
         "date": "2026-11-24",
         "event": "Core PCE Price Index (YoY)",
-        "hours": 36
+        "hours": 30
       },
       {
         "date": "2026-11-24",
         "event": "GDP (QoQ)",
-        "hours": 36
+        "hours": 30
       }
     ],
     "nextMeeting": {
       "date": "2026-12-09",
       "mostLikelyRange": "400-425",
-      "probability": 95.2,
+      "probability": 94.7,
       "daysAway": 16
     },
     "note": "3 high-impact release(s) within 48h: Core PCE Price Index (MoM), Core PCE Price Index (YoY), GDP (QoQ)"
   },
   "brief": {
-    "headline": "SELL Bitcoin",
+    "headline": "BUY Solana",
     "lines": [
-      "Regime: RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75.",
-      "Macro: 3 high-impact release(s) within 48h: Core PCE Price Index (MoM), Core PCE Price Index (YoY), GDP (QoQ); next FOMC 2026-12-09 (95.2% on 400-425 bps).",
-      "Top idea: SELL Bitcoin (confidence 0.25). 6 actionable signal(s) out of 9 assets.",
+      "Regime: NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75.",
+      "Macro: 3 high-impact release(s) within 48h: Core PCE Price Index (MoM), Core PCE Price Index (YoY), GDP (QoQ); next FOMC 2026-12-09 (94.7% on 400-425 bps).",
+      "Top idea: BUY Solana (confidence 0.3). 5 actionable signal(s) out of 9 assets.",
       "1 ticket(s) priced against live SoDEX books and waiting for human confirmation.",
       "Watchlist only (no SoDEX market): SELL SSI RWA index, SELL SSI Layer1 index."
     ]
@@ -63,107 +63,104 @@
       },
       "factors": {
         "flow": {
-          "score": -0.783,
+          "score": -0.869,
           "available": true,
-          "last5d": -1306023836,
-          "lastDay": -582193661,
-          "lastDate": "2026-11-19",
-          "streak": -3,
-          "totalNetAssets": 76549156272,
-          "note": "outflow streak of 3 day(s); 5-day net -$1.31B"
+          "last5d": -1789735661,
+          "lastDay": -669162059,
+          "lastDate": "2026-11-20",
+          "streak": -4,
+          "totalNetAssets": 71345056311,
+          "note": "outflow streak of 4 day(s); 5-day net -$1.79B"
         },
         "momentum": {
-          "score": 0.462,
+          "score": 0.809,
           "available": true,
-          "change24h": 0.0132,
-          "rangePosition": 0.534,
-          "dailyRangePct": 0.0476,
-          "note": "+1.32% in 24h, trading in the upper third of its daily range"
+          "change24h": 0.0418,
+          "rangePosition": 0.697,
+          "dailyRangePct": 0.0467,
+          "note": "+4.18% in 24h, trading in the upper third of its daily range"
         },
         "news": {
-          "score": -0.488,
+          "score": 0.064,
           "available": true,
-          "articles": 10,
-          "positive": 0,
-          "negative": 7,
+          "articles": 15,
+          "positive": 7,
+          "negative": 5,
           "evidence": [
             {
-              "title": "Analyst: Binance BTC open interest has contracted by nearly 40% compared to earlier, with the decline in USD terms setting a historical record",
-              "url": "https://sosovalue.com/research/2124656718658670592?from=888001",
-              "ageHours": 1.3,
-              "sentiment": -0.833
+              "title": "Wall Street Keeps Dumping: Crypto ETFs Bleed $2.1B as Bitcoin Crashes to $55K",
+              "url": "https://sosovalue.com/research/2124755217234874368?from=888001",
+              "ageHours": 1.1,
+              "sentiment": -0.857
             },
             {
-              "title": "Analyst: Binance BTC open interest has contracted by nearly 40% compared to earlier, with the decline in USD terms setting a historical record",
-              "url": "https://sosovalue.com/research/2124657192294625280?from=888001",
-              "ageHours": 1.3,
-              "sentiment": -0.8
+              "title": "Wall Street Keeps Dumping: Crypto ETFs Bleed $2.1B as Bitcoin Crashes to $55K",
+              "url": "https://sosovalue.com/research/2124755217503436800?from=888001",
+              "ageHours": 1.1,
+              "sentiment": -0.857
             },
             {
-              "title": "Analyst: Binance's Bitcoin open interest has declined nearly 40% from its previous peak, and has decreased by nearly $4.5 billion over the past year",
-              "url": "https://sosovalue.com/research/2124662739859759104?from=888001",
-              "ageHours": 0.9,
-              "sentiment": -0.75
+              "title": "A trader has a win rate of only 15.1%, but has accumulated profits of $9.7 million",
+              "url": "https://sosovalue.com/research/2124740769610936320?from=888001",
+              "ageHours": 2.1,
+              "sentiment": 0.8
             }
           ],
-          "note": "10 articles: 0 positive, 7 negative (recency-weighted)"
+          "note": "15 articles: 7 positive, 5 negative (recency-weighted)"
         },
-        "price": 60994.01,
+        "price": 61524.62,
         "regime": {
-          "score": -0.383,
+          "score": -0.191,
           "available": true,
-          "label": "RISK-OFF",
-          "marketCapChange24h": 0.010117207,
-          "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+          "label": "NEUTRAL",
+          "marketCapChange24h": 0.034234941,
+          "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
         }
       },
       "signal": {
-        "score": -0.296,
-        "confidence": 0.25,
-        "stance": "SELL",
-        "agreement": 0.75,
+        "score": -0.065,
+        "confidence": 0.05,
+        "stance": "HOLD",
+        "agreement": 0.5,
         "contributions": [
           {
             "factor": "flow",
             "weight": 0.35,
-            "score": -0.783,
-            "contribution": -0.274
+            "score": -0.869,
+            "contribution": -0.304
           },
           {
             "factor": "momentum",
             "weight": 0.3,
-            "score": 0.462,
-            "contribution": 0.139
-          },
-          {
-            "factor": "news",
-            "weight": 0.25,
-            "score": -0.488,
-            "contribution": -0.122
+            "score": 0.809,
+            "contribution": 0.243
           },
           {
             "factor": "regime",
             "weight": 0.1,
-            "score": -0.383,
-            "contribution": -0.038
+            "score": -0.191,
+            "contribution": -0.019
+          },
+          {
+            "factor": "news",
+            "weight": 0.25,
+            "score": 0.064,
+            "contribution": 0.016
           }
         ]
       },
       "explain": {
-        "summary": "Lean short / reduce Bitcoin: composite -0.296, confidence 0.25.",
-        "why": "Drivers: ETF flows strongly negative (outflow streak of 3 day(s); 5-day net -$1.31B); price momentum supportive (+1.32% in 24h, trading in the upper third of its daily range); news sentiment negative (10 articles: 0 positive, 7 negative (recency-weighted)).",
-        "risk": "What would change the view: price momentum is pointing the other way (+1.32% in 24h, trading in the upper third of its daily range)."
+        "summary": "Stay flat Bitcoin: composite -0.065, confidence 0.05.",
+        "why": "Drivers: ETF flows strongly negative (outflow streak of 4 day(s); 5-day net -$1.79B); price momentum strongly supportive (+4.18% in 24h, trading in the upper third of its daily range); market regime negative (NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75).",
+        "risk": "What would change the view: price momentum is pointing the other way (+4.18% in 24h, trading in the upper third of its daily range)."
       },
       "decision": {
         "id": "BTC",
-        "action": "PROPOSE",
-        "side": "SELL",
-        "notional": 218.84,
-        "stopPct": 0.0714,
-        "maxLoss": 15.63,
-        "guards": []
-      },
-      "ticket": "tm-d317d3d1"
+        "action": "NONE",
+        "guards": [
+          "no actionable stance"
+        ]
+      }
     },
     {
       "id": "ETH",
@@ -177,62 +174,62 @@
       },
       "factors": {
         "flow": {
-          "score": -0.515,
+          "score": -0.66,
           "available": true,
-          "last5d": -216792918,
-          "lastDay": -131244424,
-          "lastDate": "2026-11-19",
-          "streak": -5,
-          "totalNetAssets": 9598705422,
-          "note": "outflow streak of 5 day(s); 5-day net -$216.8M"
+          "last5d": -305855745,
+          "lastDay": -97375294,
+          "lastDate": "2026-11-20",
+          "streak": -6,
+          "totalNetAssets": 8630796561,
+          "note": "outflow streak of 6 day(s); 5-day net -$305.9M"
         },
         "momentum": {
-          "score": 0.531,
+          "score": 0.634,
           "available": true,
-          "change24h": 0.0166,
-          "rangePosition": 0.572,
-          "dailyRangePct": 0.0491,
-          "note": "+1.66% in 24h, trading in the upper third of its daily range"
+          "change24h": 0.0356,
+          "rangePosition": 0.339,
+          "dailyRangePct": 0.0503,
+          "note": "+3.56% in 24h, trading in the upper third of its daily range"
         },
         "news": {
-          "score": 0.081,
+          "score": 0.069,
           "available": true,
-          "articles": 16,
-          "positive": 6,
-          "negative": 5,
+          "articles": 22,
+          "positive": 12,
+          "negative": 9,
           "evidence": [
             {
-              "title": "Ethereum core developers: leaning toward retaining EIP-8037, approximately 15 thousand smart contracts may be affected",
-              "url": "https://sosovalue.com/research/2124672292453355520?from=888001",
+              "title": "Wall Street Keeps Dumping: Crypto ETFs Bleed $2.1B as Bitcoin Crashes to $55K",
+              "url": "https://sosovalue.com/research/2124755217234874368?from=888001",
+              "ageHours": 1.1,
+              "sentiment": -0.857
+            },
+            {
+              "title": "Wall Street Keeps Dumping: Crypto ETFs Bleed $2.1B as Bitcoin Crashes to $55K",
+              "url": "https://sosovalue.com/research/2124755217503436800?from=888001",
+              "ageHours": 1.1,
+              "sentiment": -0.857
+            },
+            {
+              "title": "Ark Invest has purchased $146 million in shares since Anthropic's上市, while reducing its holdings in Ethereum and Solana staking ETFs.",
+              "url": "https://sosovalue.com/research/2124768450086264832?from=888001",
               "ageHours": 0.3,
-              "sentiment": 0.667
-            },
-            {
-              "title": "$233 million in total contract liquidations across the network in the past 24 hours, primarily short positions",
-              "url": "https://sosovalue.com/research/2124526853974614016?from=888001",
-              "ageHours": 9.9,
-              "sentiment": -0.875
-            },
-            {
-              "title": "Yu Chi Lian Chuang Wang Chun reduced his holdings by another 1,799 ETH two hours ago, worth approximately $3.07 million",
-              "url": "https://sosovalue.com/research/2124669282994843648?from=888001",
-              "ageHours": 0.6,
-              "sentiment": 0.667
+              "sentiment": 0.8
             }
           ],
-          "note": "16 articles: 6 positive, 5 negative (recency-weighted)"
+          "note": "22 articles: 12 positive, 9 negative (recency-weighted)"
         },
-        "price": 1714.51,
+        "price": 1723.74,
         "regime": {
-          "score": -0.383,
+          "score": -0.191,
           "available": true,
-          "label": "RISK-OFF",
-          "marketCapChange24h": 0.010117207,
-          "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+          "label": "NEUTRAL",
+          "marketCapChange24h": 0.034234941,
+          "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
         }
       },
       "signal": {
-        "score": -0.039,
+        "score": -0.043,
         "confidence": 0.03,
         "stance": "HOLD",
         "agreement": 0.5,
@@ -240,33 +237,33 @@
           {
             "factor": "flow",
             "weight": 0.35,
-            "score": -0.515,
-            "contribution": -0.18
+            "score": -0.66,
+            "contribution": -0.231
           },
           {
             "factor": "momentum",
             "weight": 0.3,
-            "score": 0.531,
-            "contribution": 0.159
+            "score": 0.634,
+            "contribution": 0.19
           },
           {
             "factor": "regime",
             "weight": 0.1,
-            "score": -0.383,
-            "contribution": -0.038
+            "score": -0.191,
+            "contribution": -0.019
           },
           {
             "factor": "news",
             "weight": 0.25,
-            "score": 0.081,
-            "contribution": 0.02
+            "score": 0.069,
+            "contribution": 0.017
           }
         ]
       },
       "explain": {
-        "summary": "Stay flat Ethereum: composite -0.039, confidence 0.03.",
-        "why": "Drivers: ETF flows strongly negative (outflow streak of 5 day(s); 5-day net -$216.8M); price momentum strongly supportive (+1.66% in 24h, trading in the upper third of its daily range); market regime negative (RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75).",
-        "risk": "What would change the view: price momentum is pointing the other way (+1.66% in 24h, trading in the upper third of its daily range)."
+        "summary": "Stay flat Ethereum: composite -0.043, confidence 0.03.",
+        "why": "Drivers: ETF flows strongly negative (outflow streak of 6 day(s); 5-day net -$305.9M); price momentum strongly supportive (+3.56% in 24h, trading in the upper third of its daily range); market regime negative (NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75).",
+        "risk": "What would change the view: price momentum is pointing the other way (+3.56% in 24h, trading in the upper third of its daily range)."
       },
       "decision": {
         "id": "ETH",
@@ -298,67 +295,67 @@
           "note": "outflow streak of 2 day(s); 5-day net $4.4M"
         },
         "momentum": {
-          "score": 0.245,
+          "score": 0.878,
           "available": true,
-          "change24h": 0.0043,
-          "rangePosition": 0.398,
-          "dailyRangePct": 0.0381,
-          "note": "+0.43% in 24h, trading in the upper third of its daily range"
+          "change24h": 0.0431,
+          "rangePosition": 0.857,
+          "dailyRangePct": 0.0445,
+          "note": "+4.31% in 24h, trading in the upper third of its daily range"
         },
         "news": {
-          "score": 0.434,
+          "score": 0.255,
           "available": true,
           "articles": 9,
-          "positive": 6,
-          "negative": 0,
+          "positive": 7,
+          "negative": 2,
           "evidence": [
             {
-              "title": "Faster, lower cost, and more robust — Solana Foundation says Alpenglow will be upgraded by mid-October",
-              "url": "https://sosovalue.com/research/2124577433713381376?from=888001",
-              "ageHours": 6.6,
-              "sentiment": 0.75
+              "title": "Wall Street Keeps Dumping: Crypto ETFs Bleed $2.1B as Bitcoin Crashes to $55K",
+              "url": "https://sosovalue.com/research/2124755217234874368?from=888001",
+              "ageHours": 1.1,
+              "sentiment": -0.857
             },
             {
-              "title": "Tokenized stocks are rapidly expanding, potentially replicating the path of stablecoins",
-              "url": "https://sosovalue.com/research/2124530874613456896?from=888001",
-              "ageHours": 9.6,
-              "sentiment": 0.75
+              "title": "Wall Street Keeps Dumping: Crypto ETFs Bleed $2.1B as Bitcoin Crashes to $55K",
+              "url": "https://sosovalue.com/research/2124755217503436800?from=888001",
+              "ageHours": 1.1,
+              "sentiment": -0.857
             },
             {
-              "title": "Solana mainnet switches to version 1.0, foundation acquires majority stake in CoinGecko",
-              "url": "https://sosovalue.com/research/2124593822265073664?from=888001",
-              "ageHours": 5.4,
-              "sentiment": 0.5
+              "title": "Ark Invest has purchased $146 million in shares since Anthropic's上市, while reducing its holdings in Ethereum and Solana staking ETFs.",
+              "url": "https://sosovalue.com/research/2124768450086264832?from=888001",
+              "ageHours": 0.3,
+              "sentiment": 0.8
             }
           ],
-          "note": "9 articles: 6 positive, 0 negative (recency-weighted)"
+          "note": "9 articles: 7 positive, 2 negative (recency-weighted)"
         },
-        "price": 70.62,
+        "price": 72.15,
         "regime": {
-          "score": -0.383,
+          "score": -0.191,
           "available": true,
-          "label": "RISK-OFF",
-          "marketCapChange24h": 0.010117207,
-          "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+          "label": "NEUTRAL",
+          "marketCapChange24h": 0.034234941,
+          "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
         }
       },
       "signal": {
-        "score": 0.185,
-        "confidence": 0.16,
-        "stance": "HOLD",
+        "score": 0.349,
+        "confidence": 0.3,
+        "stance": "BUY",
         "agreement": 0.75,
         "contributions": [
           {
-            "factor": "news",
-            "weight": 0.25,
-            "score": 0.434,
-            "contribution": 0.109
-          },
-          {
             "factor": "momentum",
             "weight": 0.3,
-            "score": 0.245,
-            "contribution": 0.074
+            "score": 0.878,
+            "contribution": 0.263
+          },
+          {
+            "factor": "news",
+            "weight": 0.25,
+            "score": 0.255,
+            "contribution": 0.064
           },
           {
             "factor": "flow",
@@ -369,23 +366,26 @@
           {
             "factor": "regime",
             "weight": 0.1,
-            "score": -0.383,
-            "contribution": -0.038
+            "score": -0.191,
+            "contribution": -0.019
           }
         ]
       },
       "explain": {
-        "summary": "Stay flat Solana: composite +0.185, confidence 0.16.",
-        "why": "Drivers: news sentiment supportive (9 articles: 6 positive, 0 negative (recency-weighted)); price momentum supportive (+0.43% in 24h, trading in the upper third of its daily range); ETF flows neutral (outflow streak of 2 day(s); 5-day net $4.4M).",
-        "risk": "What would change the view: market regime is pointing the other way (RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75)."
+        "summary": "Lean long Solana: composite +0.349, confidence 0.3.",
+        "why": "Drivers: price momentum strongly supportive (+4.31% in 24h, trading in the upper third of its daily range); news sentiment supportive (9 articles: 7 positive, 2 negative (recency-weighted)); ETF flows neutral (outflow streak of 2 day(s); 5-day net $4.4M).",
+        "risk": "What would change the view: market regime is pointing the other way (NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75)."
       },
       "decision": {
         "id": "SOL",
-        "action": "NONE",
-        "guards": [
-          "no actionable stance"
-        ]
-      }
+        "action": "PROPOSE",
+        "side": "BUY",
+        "notional": 280.9,
+        "stopPct": 0.0668,
+        "maxLoss": 18.75,
+        "guards": []
+      },
+      "ticket": "tm-04d33154"
     },
     {
       "id": "ssiMAG7",
@@ -399,12 +399,12 @@
       },
       "factors": {
         "momentum": {
-          "score": -0.64,
+          "score": -0.54,
           "available": true,
-          "change24h": 0.0128,
-          "roi7d": -0.172,
-          "roi1m": -0.2622,
-          "note": "24h +1.28%, 7d -17.20%, 30d -26.22%"
+          "change24h": 0.0399,
+          "roi7d": -0.1652,
+          "roi1m": -0.2561,
+          "note": "24h +3.99%, 7d -16.52%, 30d -25.61%"
         },
         "sector": {
           "score": 0,
@@ -412,71 +412,71 @@
           "note": "cross-sector index"
         },
         "news": {
-          "score": 0.008,
+          "score": -0.023,
           "available": true,
           "articles": 50,
-          "positive": 14,
-          "negative": 13,
+          "positive": 15,
+          "negative": 18,
           "evidence": [
             {
-              "title": "Analyst: Binance BTC open interest has contracted by nearly 40% compared to earlier, with the decline in USD terms setting a historical record",
-              "url": "https://sosovalue.com/hot/2124657235371757570?from=888001",
-              "ageHours": 1.3,
-              "sentiment": -0.833
+              "title": "A trader has a win rate of only 15.1%, but has accumulated profits of $9.7 million",
+              "url": "https://sosovalue.com/hot/2124741014952554498?from=888001",
+              "ageHours": 2.1,
+              "sentiment": 0.8
             },
             {
-              "title": "Visa expands Trusted Agent Protocol: Launches experimental Visa CLI agent wallet",
-              "url": "https://sosovalue.com/hot/2124671775313321986?from=888001",
-              "ageHours": 0.3,
-              "sentiment": 0.75
+              "title": "Citrea will initiate the Pomelo mainnet upgrade today at 23:00",
+              "url": "https://sosovalue.com/hot/2124704763851268098?from=888001",
+              "ageHours": 4.6,
+              "sentiment": 0.857
             },
             {
-              "title": "Trump will host a banquet tonight for top holders of the TRUMP token, and the top four will be awarded 18K gold watches",
-              "url": "https://sosovalue.com/hot/2124655679923380225?from=888001",
-              "ageHours": 1.4,
-              "sentiment": -0.75
+              "title": "Goldman Sachs lowered the price targets for Samsung Electronics and SK Hynix",
+              "url": "https://sosovalue.com/hot/2124718646974222338?from=888001",
+              "ageHours": 3.2,
+              "sentiment": -0.8
             }
           ],
-          "note": "50 articles: 14 positive, 13 negative (recency-weighted)"
+          "note": "50 articles: 15 positive, 18 negative (recency-weighted)"
         },
-        "price": 10.764382782352,
+        "price": 10.852600920524,
         "regime": {
-          "score": -0.383,
+          "score": -0.191,
           "available": true,
-          "label": "RISK-OFF",
-          "marketCapChange24h": 0.010117207,
-          "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+          "label": "NEUTRAL",
+          "marketCapChange24h": 0.034234941,
+          "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
         }
       },
       "signal": {
-        "score": -0.459,
-        "confidence": 0.34,
+        "score": -0.367,
+        "confidence": 0.28,
         "stance": "SELL",
         "agreement": 1,
         "contributions": [
           {
             "factor": "momentum",
             "weight": 0.45,
-            "score": -0.64,
-            "contribution": -0.288
+            "score": -0.54,
+            "contribution": -0.243
           },
           {
             "factor": "regime",
             "weight": 0.15,
-            "score": -0.383,
-            "contribution": -0.057
+            "score": -0.191,
+            "contribution": -0.029
           },
           {
             "factor": "news",
             "weight": 0.15,
-            "score": 0.008,
-            "contribution": 0.001
+            "score": -0.023,
+            "contribution": -0.003
           }
         ]
       },
       "explain": {
-        "summary": "Lean short / reduce SSI MAG7 index: composite -0.459, confidence 0.34.",
-        "why": "Drivers: price momentum strongly negative (24h +1.28%, 7d -17.20%, 30d -26.22%); market regime negative (RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75).",
+        "summary": "Lean short / reduce SSI MAG7 index: composite -0.367, confidence 0.28.",
+        "why": "Drivers: price momentum strongly negative (24h +3.99%, 7d -16.52%, 30d -25.61%); market regime negative (NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75).",
         "risk": "All live factors agree; the main risk is a macro surprise."
       },
       "decision": {
@@ -501,20 +501,20 @@
       },
       "factors": {
         "momentum": {
-          "score": -0.653,
+          "score": -0.542,
           "available": true,
-          "change24h": 0.0119,
-          "roi7d": -0.1688,
-          "roi1m": -0.2823,
-          "note": "24h +1.19%, 7d -16.88%, 30d -28.23%"
+          "change24h": 0.0415,
+          "roi7d": -0.1575,
+          "roi1m": -0.2726,
+          "note": "24h +4.15%, 7d -15.75%, 30d -27.26%"
         },
         "sector": {
-          "score": 0.212,
+          "score": 0.434,
           "available": true,
-          "rank": 7,
+          "rank": 3,
           "of": 16,
-          "change24h": 0.0113,
-          "note": "#7/16 sectors today (+1.13%, +0.43% vs median)"
+          "change24h": 0.0389,
+          "note": "#3/16 sectors today (+3.89%, +0.93% vs median)"
         },
         "news": {
           "score": 0,
@@ -522,54 +522,52 @@
           "note": "no recent news",
           "evidence": []
         },
-        "price": 5.971707933798,
+        "price": 6.052435892937,
         "regime": {
-          "score": -0.383,
+          "score": -0.191,
           "available": true,
-          "label": "RISK-OFF",
-          "marketCapChange24h": 0.010117207,
-          "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+          "label": "NEUTRAL",
+          "marketCapChange24h": 0.034234941,
+          "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
         }
       },
       "signal": {
-        "score": -0.351,
-        "confidence": 0.24,
-        "stance": "SELL",
+        "score": -0.193,
+        "confidence": 0.13,
+        "stance": "HOLD",
         "agreement": 0.67,
         "contributions": [
           {
             "factor": "momentum",
             "weight": 0.45,
-            "score": -0.653,
-            "contribution": -0.294
-          },
-          {
-            "factor": "regime",
-            "weight": 0.15,
-            "score": -0.383,
-            "contribution": -0.057
+            "score": -0.542,
+            "contribution": -0.244
           },
           {
             "factor": "sector",
             "weight": 0.25,
-            "score": 0.212,
-            "contribution": 0.053
+            "score": 0.434,
+            "contribution": 0.109
+          },
+          {
+            "factor": "regime",
+            "weight": 0.15,
+            "score": -0.191,
+            "contribution": -0.029
           }
         ]
       },
       "explain": {
-        "summary": "Lean short / reduce SSI DeFi index: composite -0.351, confidence 0.24.",
-        "why": "Drivers: price momentum strongly negative (24h +1.19%, 7d -16.88%, 30d -28.23%); market regime negative (RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75); sector breadth supportive (#7/16 sectors today (+1.13%, +0.43% vs median)).",
-        "risk": "What would change the view: sector breadth is pointing the other way (#7/16 sectors today (+1.13%, +0.43% vs median))."
+        "summary": "Stay flat SSI DeFi index: composite -0.193, confidence 0.13.",
+        "why": "Drivers: price momentum strongly negative (24h +4.15%, 7d -15.75%, 30d -27.26%); sector breadth supportive (#3/16 sectors today (+3.89%, +0.93% vs median)); market regime negative (NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75).",
+        "risk": "What would change the view: sector breadth is pointing the other way (#3/16 sectors today (+3.89%, +0.93% vs median))."
       },
       "decision": {
         "id": "ssiDeFi",
-        "action": "BLOCKED",
-        "side": "SELL",
+        "action": "NONE",
         "guards": [
-          "spot market: cannot short, reduce existing holdings only"
-        ],
-        "stopPct": 0.12
+          "no actionable stance"
+        ]
       }
     },
     {
@@ -584,20 +582,20 @@
       },
       "factors": {
         "momentum": {
-          "score": -0.755,
+          "score": -0.598,
           "available": true,
-          "change24h": -0.0003,
-          "roi7d": -0.2042,
-          "roi1m": -0.3121,
-          "note": "24h -0.03%, 7d -20.42%, 30d -31.21%"
+          "change24h": 0.0287,
+          "roi7d": -0.194,
+          "roi1m": -0.3032,
+          "note": "24h +2.87%, 7d -19.40%, 30d -30.32%"
         },
         "sector": {
-          "score": -0.367,
+          "score": -0.154,
           "available": true,
           "rank": 12,
           "of": 16,
-          "change24h": -0.0007,
-          "note": "#12/16 sectors today (-0.07%, -0.77% vs median)"
+          "change24h": 0.0265,
+          "note": "#12/16 sectors today (+2.65%, -0.31% vs median)"
         },
         "news": {
           "score": 0,
@@ -605,44 +603,44 @@
           "note": "no recent news",
           "evidence": []
         },
-        "price": 4.806713687597,
+        "price": 4.868610093947,
         "regime": {
-          "score": -0.383,
+          "score": -0.191,
           "available": true,
-          "label": "RISK-OFF",
-          "marketCapChange24h": 0.010117207,
-          "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+          "label": "NEUTRAL",
+          "marketCapChange24h": 0.034234941,
+          "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
         }
       },
       "signal": {
-        "score": -0.575,
-        "confidence": 0.49,
+        "score": -0.396,
+        "confidence": 0.34,
         "stance": "SELL",
         "agreement": 1,
         "contributions": [
           {
             "factor": "momentum",
             "weight": 0.45,
-            "score": -0.755,
-            "contribution": -0.34
+            "score": -0.598,
+            "contribution": -0.269
           },
           {
             "factor": "sector",
             "weight": 0.25,
-            "score": -0.367,
-            "contribution": -0.092
+            "score": -0.154,
+            "contribution": -0.038
           },
           {
             "factor": "regime",
             "weight": 0.15,
-            "score": -0.383,
-            "contribution": -0.057
+            "score": -0.191,
+            "contribution": -0.029
           }
         ]
       },
       "explain": {
-        "summary": "Lean short / reduce SSI Meme index: composite -0.575, confidence 0.49.",
-        "why": "Drivers: price momentum strongly negative (24h -0.03%, 7d -20.42%, 30d -31.21%); sector breadth negative (#12/16 sectors today (-0.07%, -0.77% vs median)); market regime negative (RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75).",
+        "summary": "Lean short / reduce SSI Meme index: composite -0.396, confidence 0.34.",
+        "why": "Drivers: price momentum strongly negative (24h +2.87%, 7d -19.40%, 30d -30.32%); sector breadth negative (#12/16 sectors today (+2.65%, -0.31% vs median)); market regime negative (NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75).",
         "risk": "All live factors agree; the main risk is a macro surprise."
       },
       "decision": {
@@ -663,94 +661,94 @@
       "venue": null,
       "factors": {
         "momentum": {
-          "score": -0.092,
+          "score": -0.093,
           "available": true,
-          "change24h": 0.0354,
-          "roi7d": 0.0123,
-          "roi1m": -0.2016,
-          "note": "24h +3.54%, 7d +1.23%, 30d -20.16%"
+          "change24h": 0.0277,
+          "roi7d": 0.0164,
+          "roi1m": -0.1983,
+          "note": "24h +2.77%, 7d +1.64%, 30d -19.83%"
         },
         "sector": {
-          "score": 0.611,
+          "score": -0.045,
           "available": true,
-          "rank": 1,
+          "rank": 10,
           "of": 16,
-          "change24h": 0.0212,
-          "note": "#1/16 sectors today (+2.12%, +1.42% vs median)"
+          "change24h": 0.0287,
+          "note": "#10/16 sectors today (+2.87%, -0.09% vs median)"
         },
         "news": {
-          "score": 0.267,
+          "score": 0.234,
           "available": true,
-          "articles": 4,
+          "articles": 3,
           "positive": 2,
           "negative": 1,
           "evidence": [
             {
               "title": "Visa expands Trusted Agent Protocol: Launches experimental Visa CLI agent wallet",
               "url": "https://sosovalue.com/hot/2124671775313321986?from=888001",
-              "ageHours": 0.3,
+              "ageHours": 6.7,
               "sentiment": 0.75
-            },
-            {
-              "title": "OpenAI Chief Scientist Proposes Setting AI Development Limits Based on Perplexity",
-              "url": "https://sosovalue.com/hot/2124658340568981505?from=888001",
-              "ageHours": 0.1,
-              "sentiment": 0.667
             },
             {
               "title": "US stock index futures rebounded, as Asian markets responded to AI stock sell-offs",
               "url": "https://sosovalue.com/hot/2124644652609122306?from=888001",
-              "ageHours": 0.7,
+              "ageHours": 7,
               "sentiment": -0.364
+            },
+            {
+              "title": "Crypto market sectors showed mixed gains and losses, the AI sector rose 1.75%, and BTC rebounded above $60,000",
+              "url": "https://sosovalue.com/hot/2124690950131027970?from=888001",
+              "ageHours": 5.4,
+              "sentiment": 0.308
             }
           ],
-          "note": "4 articles: 2 positive, 1 negative (recency-weighted)"
+          "note": "3 articles: 2 positive, 1 negative (recency-weighted)"
         },
-        "price": 3.582693787583,
+        "price": 3.59741232705,
         "regime": {
-          "score": -0.383,
+          "score": -0.191,
           "available": true,
-          "label": "RISK-OFF",
-          "marketCapChange24h": 0.010117207,
-          "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+          "label": "NEUTRAL",
+          "marketCapChange24h": 0.034234941,
+          "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
         }
       },
       "signal": {
-        "score": 0.094,
-        "confidence": 0.07,
+        "score": -0.047,
+        "confidence": 0.04,
         "stance": "HOLD",
-        "agreement": 0.5,
+        "agreement": 0.67,
         "contributions": [
-          {
-            "factor": "sector",
-            "weight": 0.25,
-            "score": 0.611,
-            "contribution": 0.153
-          },
-          {
-            "factor": "regime",
-            "weight": 0.15,
-            "score": -0.383,
-            "contribution": -0.057
-          },
           {
             "factor": "momentum",
             "weight": 0.45,
-            "score": -0.092,
-            "contribution": -0.041
+            "score": -0.093,
+            "contribution": -0.042
           },
           {
             "factor": "news",
             "weight": 0.15,
-            "score": 0.267,
-            "contribution": 0.04
+            "score": 0.234,
+            "contribution": 0.035
+          },
+          {
+            "factor": "regime",
+            "weight": 0.15,
+            "score": -0.191,
+            "contribution": -0.029
+          },
+          {
+            "factor": "sector",
+            "weight": 0.25,
+            "score": -0.045,
+            "contribution": -0.011
           }
         ]
       },
       "explain": {
-        "summary": "Stay flat SSI AI index: composite +0.094, confidence 0.07.",
-        "why": "Drivers: sector breadth strongly supportive (#1/16 sectors today (+2.12%, +1.42% vs median)); market regime negative (RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75); price momentum neutral (24h +3.54%, 7d +1.23%, 30d -20.16%).",
-        "risk": "What would change the view: market regime is pointing the other way (RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75)."
+        "summary": "Stay flat SSI AI index: composite -0.047, confidence 0.04.",
+        "why": "Drivers: price momentum neutral (24h +2.77%, 7d +1.64%, 30d -19.83%); news sentiment supportive (3 articles: 2 positive, 1 negative (recency-weighted)); market regime negative (NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75).",
+        "risk": "What would change the view: news sentiment is pointing the other way (3 articles: 2 positive, 1 negative (recency-weighted))."
       },
       "decision": {
         "id": "ssiAI",
@@ -768,20 +766,20 @@
       "venue": null,
       "factors": {
         "momentum": {
-          "score": -0.634,
+          "score": -0.55,
           "available": true,
-          "change24h": 0.0133,
-          "roi7d": -0.1588,
-          "roi1m": -0.2699,
-          "note": "24h +1.33%, 7d -15.88%, 30d -26.99%"
+          "change24h": 0.0338,
+          "roi7d": -0.1537,
+          "roi1m": -0.2656,
+          "note": "24h +3.38%, 7d -15.37%, 30d -26.56%"
         },
         "sector": {
-          "score": 0.114,
+          "score": 0.075,
           "available": true,
-          "rank": 8,
+          "rank": 6,
           "of": 16,
-          "change24h": 0.0093,
-          "note": "#8/16 sectors today (+0.93%, +0.23% vs median)"
+          "change24h": 0.0311,
+          "note": "#6/16 sectors today (+3.11%, +0.15% vs median)"
         },
         "news": {
           "score": 0,
@@ -789,45 +787,45 @@
           "note": "no recent news",
           "evidence": []
         },
-        "price": 7.549597902913,
+        "price": 7.594746916222,
         "regime": {
-          "score": -0.383,
+          "score": -0.191,
           "available": true,
-          "label": "RISK-OFF",
-          "marketCapChange24h": 0.010117207,
-          "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+          "label": "NEUTRAL",
+          "marketCapChange24h": 0.034234941,
+          "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
         }
       },
       "signal": {
-        "score": -0.37,
-        "confidence": 0.25,
+        "score": -0.303,
+        "confidence": 0.21,
         "stance": "SELL",
         "agreement": 0.67,
         "contributions": [
           {
             "factor": "momentum",
             "weight": 0.45,
-            "score": -0.634,
-            "contribution": -0.285
+            "score": -0.55,
+            "contribution": -0.248
           },
           {
             "factor": "regime",
             "weight": 0.15,
-            "score": -0.383,
-            "contribution": -0.057
+            "score": -0.191,
+            "contribution": -0.029
           },
           {
             "factor": "sector",
             "weight": 0.25,
-            "score": 0.114,
-            "contribution": 0.029
+            "score": 0.075,
+            "contribution": 0.019
           }
         ]
       },
       "explain": {
-        "summary": "Lean short / reduce SSI Layer1 index: composite -0.37, confidence 0.25.",
-        "why": "Drivers: price momentum strongly negative (24h +1.33%, 7d -15.88%, 30d -26.99%); market regime negative (RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75); sector breadth neutral (#8/16 sectors today (+0.93%, +0.23% vs median)).",
-        "risk": "What would change the view: sector breadth is pointing the other way (#8/16 sectors today (+0.93%, +0.23% vs median))."
+        "summary": "Lean short / reduce SSI Layer1 index: composite -0.303, confidence 0.21.",
+        "why": "Drivers: price momentum strongly negative (24h +3.38%, 7d -15.37%, 30d -26.56%); market regime negative (NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75); sector breadth neutral (#6/16 sectors today (+3.11%, +0.15% vs median)).",
+        "risk": "All live factors agree; the main risk is a macro surprise."
       },
       "decision": {
         "id": "ssiLayer1",
@@ -836,7 +834,7 @@
         "guards": [
           "no SoDEX market for this asset"
         ],
-        "stopPct": 0.12
+        "stopPct": 0.1162
       }
     },
     {
@@ -847,82 +845,66 @@
       "venue": null,
       "factors": {
         "momentum": {
-          "score": -0.911,
+          "score": -0.734,
           "available": true,
-          "change24h": -0.0239,
-          "roi7d": -0.247,
-          "roi1m": -0.3903,
-          "note": "24h -2.39%, 7d -24.70%, 30d -39.03%"
+          "change24h": 0.0061,
+          "roi7d": -0.2322,
+          "roi1m": -0.3783,
+          "note": "24h +0.61%, 7d -23.22%, 30d -37.83%"
         },
         "sector": {
-          "score": -0.936,
+          "score": -0.916,
           "available": true,
           "rank": 16,
           "of": 16,
-          "change24h": -0.0271,
-          "note": "#16/16 sectors today (-2.71%, -3.41% vs median)"
+          "change24h": -0.0017,
+          "note": "#16/16 sectors today (-0.17%, -3.13% vs median)"
         },
         "news": {
-          "score": 0.75,
-          "available": true,
-          "articles": 1,
-          "positive": 1,
-          "negative": 0,
-          "evidence": [
-            {
-              "title": "Jesse Pollak: Base is still exploring the possibility of launching its own token, but currently isn't in a rush to move forward",
-              "url": "https://sosovalue.com/hot/2124510978743939073?from=888001",
-              "ageHours": 10.9,
-              "sentiment": 0.75
-            }
-          ],
-          "note": "1 articles: 1 positive, 0 negative (recency-weighted)"
+          "score": 0,
+          "available": false,
+          "note": "no recent news",
+          "evidence": []
         },
-        "price": 3.538948760881,
+        "price": 3.608610586292,
         "regime": {
-          "score": -0.383,
+          "score": -0.191,
           "available": true,
-          "label": "RISK-OFF",
-          "marketCapChange24h": 0.010117207,
-          "note": "RISK-OFF: total crypto market cap +1.01% in 24h, BTC ETF flow score -0.783, macro risk 0.75"
+          "label": "NEUTRAL",
+          "marketCapChange24h": 0.034234941,
+          "note": "NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75"
         }
       },
       "signal": {
-        "score": -0.589,
-        "confidence": 0.5,
+        "score": -0.692,
+        "confidence": 0.53,
         "stance": "SELL",
-        "agreement": 0.75,
+        "agreement": 1,
         "contributions": [
           {
             "factor": "momentum",
             "weight": 0.45,
-            "score": -0.911,
-            "contribution": -0.41
+            "score": -0.734,
+            "contribution": -0.33
           },
           {
             "factor": "sector",
             "weight": 0.25,
-            "score": -0.936,
-            "contribution": -0.234
-          },
-          {
-            "factor": "news",
-            "weight": 0.15,
-            "score": 0.75,
-            "contribution": 0.112
+            "score": -0.916,
+            "contribution": -0.229
           },
           {
             "factor": "regime",
             "weight": 0.15,
-            "score": -0.383,
-            "contribution": -0.057
+            "score": -0.191,
+            "contribution": -0.029
           }
         ]
       },
       "explain": {
-        "summary": "Lean short / reduce SSI RWA index: composite -0.589, confidence 0.5.",
-        "why": "Drivers: price momentum strongly negative (24h -2.39%, 7d -24.70%, 30d -39.03%); sector breadth strongly negative (#16/16 sectors today (-2.71%, -3.41% vs median)); news sentiment strongly supportive (1 articles: 1 positive, 0 negative (recency-weighted)).",
-        "risk": "What would change the view: news sentiment is pointing the other way (1 articles: 1 positive, 0 negative (recency-weighted))."
+        "summary": "Lean short / reduce SSI RWA index: composite -0.692, confidence 0.53.",
+        "why": "Drivers: price momentum strongly negative (24h +0.61%, 7d -23.22%, 30d -37.83%); sector breadth strongly negative (#16/16 sectors today (-0.17%, -3.13% vs median)); market regime negative (NEUTRAL: total crypto market cap +3.42% in 24h, BTC ETF flow score -0.869, macro risk 0.75).",
+        "risk": "All live factors agree; the main risk is a macro surprise."
       },
       "decision": {
         "id": "ssiRWA",
@@ -936,8 +918,8 @@
     }
   ],
   "sizing": {
-    "grossExposure": 218.84,
-    "grossPct": 2.19,
+    "grossExposure": 280.9,
+    "grossPct": 2.81,
     "config": {
       "equity": 10000,
       "riskPerTrade": 0.01,
@@ -952,33 +934,45 @@
   },
   "tickets": [
     {
-      "id": "tm-d317d3d1",
-      "asset": "BTC",
-      "label": "Bitcoin",
+      "id": "tm-04d33154",
+      "asset": "SOL",
+      "label": "Solana",
       "venue": "SoDEX mainnet perps",
-      "symbol": "BTC-USD",
-      "side": "SELL",
-      "notional": 218.84,
+      "symbol": "SOL-USD",
+      "side": "BUY",
+      "notional": 280.9,
       "status": "AWAITING_CONFIRMATION",
       "reasons": [],
       "orderType": "LIMIT_IOC",
-      "limitPrice": 60964,
-      "estAvgPrice": 60964,
-      "quantity": 0.0035896594711633096,
-      "stopPrice": 65316.8296,
-      "stopPct": 0.0714,
-      "maxLoss": 15.63,
-      "spreadBps": 0.2,
-      "slippageBps": 0.1,
+      "limitPrice": 72.11,
+      "estAvgPrice": 72.11,
+      "quantity": 3.8954375260019414,
+      "stopPrice": 67.293052,
+      "stopPct": 0.0668,
+      "maxLoss": 18.75,
+      "spreadBps": 1.4,
+      "slippageBps": 0.7,
       "levelsUsed": 1,
-      "mid": 60964.5
+      "mid": 72.10499999999999
     }
   ],
   "track": {
-    "tickets": 36,
-    "pnl": 270.85,
-    "hitRate": 64,
+    "tickets": 37,
+    "pnl": 89.22,
+    "hitRate": 59,
     "rows": [
+      {
+        "id": "tm-d317d3d1",
+        "openedAt": "2026-11-23T01:25:27.870Z",
+        "asset": "BTC",
+        "symbol": "BTC-USD",
+        "side": "SELL",
+        "entry": 60964,
+        "mark": 61498,
+        "stopped": false,
+        "returnPct": -0.88,
+        "pnl": -1.92
+      },
       {
         "id": "tm-f62cd35b",
         "openedAt": "2026-11-22T07:21:33.139Z",
@@ -986,10 +980,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 59154.00000000001,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": -3.06,
-        "pnl": -9.01
+        "returnPct": -3.96,
+        "pnl": -11.67
       },
       {
         "id": "tm-07469557",
@@ -998,10 +992,10 @@
         "symbol": "SOL-USD",
         "side": "BUY",
         "entry": 70.36,
-        "mark": 70.58,
+        "mark": 72.11,
         "stopped": false,
-        "returnPct": 0.31,
-        "pnl": 0.89
+        "returnPct": 2.49,
+        "pnl": 7.05
       },
       {
         "id": "tm-e77e237d",
@@ -1010,10 +1004,10 @@
         "symbol": "SOL-USD",
         "side": "BUY",
         "entry": 70.81,
-        "mark": 70.58,
+        "mark": 72.11,
         "stopped": false,
-        "returnPct": -0.32,
-        "pnl": -0.92
+        "returnPct": 1.84,
+        "pnl": 5.2
       },
       {
         "id": "tm-320d2b0f",
@@ -1022,10 +1016,10 @@
         "symbol": "ETH-USD",
         "side": "SELL",
         "entry": 1666.8,
-        "mark": 1713.7,
+        "mark": 1723,
         "stopped": false,
-        "returnPct": -2.81,
-        "pnl": -19.46
+        "returnPct": -3.37,
+        "pnl": -23.32
       },
       {
         "id": "tm-7d39b673",
@@ -1034,10 +1028,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 58999,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": -3.33,
-        "pnl": -23.3
+        "returnPct": -4.24,
+        "pnl": -29.65
       },
       {
         "id": "tm-f932c816",
@@ -1046,10 +1040,10 @@
         "symbol": "SOL-USD",
         "side": "SELL",
         "entry": 67.92,
-        "mark": 70.58,
+        "mark": 72.11,
         "stopped": false,
-        "returnPct": -3.92,
-        "pnl": -14.69
+        "returnPct": -6.17,
+        "pnl": -23.13
       },
       {
         "id": "tm-7e58e871",
@@ -1058,10 +1052,10 @@
         "symbol": "ETH-USD",
         "side": "SELL",
         "entry": 1635.3,
-        "mark": 1713.7,
+        "mark": 1723,
         "stopped": false,
-        "returnPct": -4.79,
-        "pnl": -37.16
+        "returnPct": -5.36,
+        "pnl": -41.56
       },
       {
         "id": "tm-566a6d5d",
@@ -1070,10 +1064,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 58258,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": -4.64,
-        "pnl": -37.92
+        "returnPct": -5.56,
+        "pnl": -45.42
       },
       {
         "id": "tm-3752d837",
@@ -1082,10 +1076,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 59107,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": -3.14,
-        "pnl": -24.92
+        "returnPct": -4.05,
+        "pnl": -32.1
       },
       {
         "id": "tm-d2f1a9fb",
@@ -1094,10 +1088,10 @@
         "symbol": "ETH-USD",
         "side": "SELL",
         "entry": 1624.3,
-        "mark": 1713.7,
+        "mark": 1723,
         "stopped": false,
-        "returnPct": -5.5,
-        "pnl": -44.95
+        "returnPct": -6.08,
+        "pnl": -49.62
       },
       {
         "id": "tm-7d01069c",
@@ -1106,10 +1100,10 @@
         "symbol": "ETH-USD",
         "side": "SELL",
         "entry": 1605.9,
-        "mark": 1713.7,
+        "mark": 1723,
         "stopped": false,
-        "returnPct": -6.71,
-        "pnl": -55.94
+        "returnPct": -7.29,
+        "pnl": -60.77
       },
       {
         "id": "tm-e2c43f08",
@@ -1118,10 +1112,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 58247,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": -4.66,
-        "pnl": -38.86
+        "returnPct": -5.58,
+        "pnl": -46.51
       },
       {
         "id": "tm-c7229a95",
@@ -1130,10 +1124,10 @@
         "symbol": "SOL-USD",
         "side": "SELL",
         "entry": 70.82,
-        "mark": 70.58,
+        "mark": 72.11,
         "stopped": false,
-        "returnPct": 0.34,
-        "pnl": 0.98
+        "returnPct": -1.82,
+        "pnl": -5.26
       },
       {
         "id": "tm-5b7a1c1e",
@@ -1142,10 +1136,10 @@
         "symbol": "ETH-USD",
         "side": "SELL",
         "entry": 1733,
-        "mark": 1713.7,
+        "mark": 1723,
         "stopped": false,
-        "returnPct": 1.11,
-        "pnl": 12.63
+        "returnPct": 0.58,
+        "pnl": 6.55
       },
       {
         "id": "tm-d6851d6a",
@@ -1154,10 +1148,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 61449,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": 0.79,
-        "pnl": 11.36
+        "returnPct": -0.08,
+        "pnl": -1.15
       },
       {
         "id": "tm-f1ac6fe4",
@@ -1166,10 +1160,10 @@
         "symbol": "ETH-USD",
         "side": "SELL",
         "entry": 1740.1,
-        "mark": 1713.7,
+        "mark": 1723,
         "stopped": false,
-        "returnPct": 1.52,
-        "pnl": 14.83
+        "returnPct": 0.98,
+        "pnl": 9.6
       },
       {
         "id": "tm-26abd360",
@@ -1178,10 +1172,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 61588,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": 1.01,
-        "pnl": 14.93
+        "returnPct": 0.15,
+        "pnl": 2.15
       },
       {
         "id": "tm-6e1d1717",
@@ -1190,10 +1184,10 @@
         "symbol": "ETH-USD",
         "side": "SELL",
         "entry": 1763.8,
-        "mark": 1713.7,
+        "mark": 1723,
         "stopped": false,
-        "returnPct": 2.84,
-        "pnl": 11.91
+        "returnPct": 2.31,
+        "pnl": 9.7
       },
       {
         "id": "tm-9bfd316b",
@@ -1202,10 +1196,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 62446,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": 2.37,
-        "pnl": 23.47
+        "returnPct": 1.52,
+        "pnl": 15
       },
       {
         "id": "tm-45e8f035",
@@ -1214,10 +1208,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 62736,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": 2.83,
-        "pnl": 21.72
+        "returnPct": 1.97,
+        "pnl": 15.16
       },
       {
         "id": "tm-9e776267",
@@ -1226,10 +1220,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 63693,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": 4.29,
-        "pnl": 26.44
+        "returnPct": 3.45,
+        "pnl": 21.26
       },
       {
         "id": "tm-4e2ee2cd",
@@ -1238,10 +1232,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 63559,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": 4.08,
-        "pnl": 38.38
+        "returnPct": 3.24,
+        "pnl": 30.47
       },
       {
         "id": "tm-2c992262",
@@ -1250,10 +1244,10 @@
         "symbol": "ETH-USD",
         "side": "SELL",
         "entry": 1777.9,
-        "mark": 1713.7,
+        "mark": 1723,
         "stopped": false,
-        "returnPct": 3.61,
-        "pnl": 26.15
+        "returnPct": 3.09,
+        "pnl": 22.36
       },
       {
         "id": "tm-67291606",
@@ -1262,22 +1256,10 @@
         "symbol": "BTC-USD",
         "side": "SELL",
         "entry": 62829.00000000001,
-        "mark": 60963,
+        "mark": 61498,
         "stopped": false,
-        "returnPct": 2.97,
-        "pnl": 33.57
-      },
-      {
-        "id": "tm-ad8ac5d7",
-        "openedAt": "2026-11-18T19:06:16.359Z",
-        "asset": "ETH",
-        "symbol": "ETH-USD",
-        "side": "SELL",
-        "entry": 1758.5,
-        "mark": 1713.7,
-        "stopped": false,
-        "returnPct": 2.55,
-        "pnl": 20.54
+        "returnPct": 2.12,
+        "pnl": 23.95
       }
     ]
   },
