@@ -2309,6 +2309,105 @@
           "stop": 67906.0128
         }
       ]
+    },
+    {
+      "at": "2026-11-24T07:30:20.809Z",
+      "regime": "RISK-OFF",
+      "macroRisk": 0.75,
+      "signals": [
+        {
+          "id": "BTC",
+          "score": -0.649,
+          "confidence": 0.63,
+          "stance": "SELL",
+          "price": 60418.81
+        },
+        {
+          "id": "ETH",
+          "score": -0.59,
+          "confidence": 0.59,
+          "stance": "SELL",
+          "price": 1696.28
+        },
+        {
+          "id": "SOL",
+          "score": -0.301,
+          "confidence": 0.3,
+          "stance": "SELL",
+          "price": 71.66
+        },
+        {
+          "id": "ssiMAG7",
+          "score": -0.665,
+          "confidence": 0.38,
+          "stance": "SELL",
+          "price": 10.68933670243
+        },
+        {
+          "id": "ssiDeFi",
+          "score": -0.331,
+          "confidence": 0.22,
+          "stance": "SELL",
+          "price": 6.127185485069
+        },
+        {
+          "id": "ssiMeme",
+          "score": -0.4,
+          "confidence": 0.34,
+          "stance": "SELL",
+          "price": 4.931611448663
+        },
+        {
+          "id": "ssiAI",
+          "score": -0.548,
+          "confidence": 0.47,
+          "stance": "SELL",
+          "price": 3.49591700393
+        },
+        {
+          "id": "ssiLayer1",
+          "score": -0.566,
+          "confidence": 0.48,
+          "stance": "SELL",
+          "price": 7.530338891809
+        },
+        {
+          "id": "ssiRWA",
+          "score": -0.877,
+          "confidence": 0.53,
+          "stance": "SELL",
+          "price": 3.528187509693
+        }
+      ],
+      "tickets": [
+        {
+          "id": "tm-2e075f6f",
+          "asset": "BTC",
+          "symbol": "BTC-USD",
+          "side": "SELL",
+          "notional": 328.13,
+          "entry": 60391,
+          "stop": 67637.92000000001
+        },
+        {
+          "id": "tm-9a5c4d63",
+          "asset": "ETH",
+          "symbol": "ETH-USD",
+          "side": "SELL",
+          "notional": 307.29,
+          "entry": 1695.6,
+          "stop": 1899.0720000000001
+        },
+        {
+          "id": "tm-ae33a920",
+          "asset": "SOL",
+          "symbol": "SOL-USD",
+          "side": "SELL",
+          "notional": 156.25,
+          "entry": 71.63,
+          "stop": 80.2256
+        }
+      ]
     }
   ]
 }
