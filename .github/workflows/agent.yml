@@ -17,12 +17,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Install
+        run: npm ci
       - name: Unit tests
         run: npm test
       - name: Agent run (SoSoValue -> signals -> SoDEX-priced tickets)
         env:
           SOSO_API_KEY: ${{ secrets.SOSO_API_KEY }}
         run: node src/run.mjs
+      - name: Sign the top ticket for SoDEX testnet (preview, never sent)
+        run: node src/execute.mjs --preview-out docs/data/execution.json
       - name: Publish snapshot
         run: |
           git config user.name "tidemark-agent"

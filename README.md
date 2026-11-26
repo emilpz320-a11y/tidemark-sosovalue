@@ -52,13 +52,28 @@ About 21 calls per run, well inside the free tier (10,000 per month, 100 per min
 * `GET /api/v1/{spot|perps}/markets/{symbol}/orderbook` is walked level by level to estimate average fill, slippage vs mid and fill ratio.
 * `GET /api/v1/{spot|perps}/markets/tickers` marks past tickets for the track record.
 
+### Signed execution (SoDEX testnet)
+
+`src/sodex-signer.mjs` turns a confirmed ticket into the exact request SoDEX expects, and `src/execute.mjs` is the confirm-before-send CLI around it.
+
+* **Order:** LIMIT IOC at the ticket's worst book level, so it can never fill worse than the price shown. Price is rounded to the symbol's `tickSize` (up for buys, down for sells) and quantity down to `stepSize`; `minQuantity`, `minNotional` and `status == TRADING` are checked against `GET /api/v1/{spot|perps}/markets/symbols` first.
+* **Body:** spot `POST /api/v1/spot/trade/orders/batch` (`{accountID, orders:[{symbolID, clOrdID, side, type, timeInForce, price, quantity}]}`); perps `POST /api/v1/perps/trade/orders` (`{accountID, symbolID, orders:[{clOrdID, modifier, side, type, timeInForce, price, quantity, reduceOnly, positionSide}]}`). Keys follow the Go struct order and decimals are strings, because the server re-marshals the body to verify the hash.
+* **Signature:** `payloadHash = keccak256(JSON of {type:"batchNewOrder"|"newOrder", params})`, EIP-712 `ExchangeAction{payloadHash, nonce}` under domain `spot`/`futures`, version 1, chainId 138565 (testnet). `X-API-Sign = 0x01 ‖ signature`, `X-API-Nonce` = ms timestamp, `X-API-Key` = the API key's name. The signer is recovered and compared before anything leaves the machine.
+* **Confirmation:** only `AWAITING_CONFIRMATION` tickets can be signed; `--send` also needs `--confirm <ticketId>` repeated and your own testnet API key in the environment. The tool refuses mainnet.
+* **Every run:** the workflow signs the top ticket with a throwaway key and publishes it as `docs/data/execution.json` (shown on the dashboard). It is never sent.
+
+```bash
+npm run execute                                   # signed preview of the top ticket (never sent)
+SODEX_API_KEY_PRIVATE_KEY=0x... SODEX_API_KEY_NAME=tidemark-01 SODEX_ACCOUNT_ID=123   npm run execute -- --ticket tm-8ebf2738 --confirm tm-8ebf2738 --send   # testnet only
+```
+
 ## Risk controls
 
 * **Sizing:** risk 1% of a $10,000 paper account per idea, scaled by confidence and macro risk. Stop = 1.5× the daily range, clamped to 2–12%.
 * **Caps:** max 20% of equity per position, 60% gross across the run.
 * **Guards:** no ticket without a SoDEX market, no shorts on spot, no new longs when macro risk > 75%, stale data refused.
 * **Execution limits:** slippage ≤ 30 bps and ≥ 98% of size fillable, or the ticket is blocked with the reason shown.
-* **Human in the loop:** tickets are `AWAITING_CONFIRMATION`. Nothing is signed, and no keys are held for SoDEX.
+* **Human in the loop:** tickets are `AWAITING_CONFIRMATION`. Signing for real needs the ticket id typed twice and the user's own testnet API key; the scheduled agent only ever signs previews with a throwaway key and holds no SoDEX keys.
 
 ## How signals are scored
 
@@ -77,13 +92,13 @@ Confidence = `min(1, 1.6·|score|) × (0.4 + 0.6·agreement) × coverage × (1 �
 ## Run it
 
 ```bash
-npm test                       # 21 unit tests, no network
+npm ci && npm test              # 29 unit tests, no network
 echo "SOSO_API_KEY=..." > .env  # free key: https://sosovalue.com/developer/dashboard
 node src/run.mjs               # writes docs/data/latest.json and history.json
 python -m http.server -d docs  # open http://localhost:8000
 ```
 
-Node ≥ 20, no dependencies. In CI the key is the `SOSO_API_KEY` repository secret. `.github/workflows/agent.yml`
+Node ≥ 20; one dependency (`viem`, for EIP-712 signing). In CI the key is the `SOSO_API_KEY` repository secret. `.github/workflows/agent.yml`
 runs the agent every 6 hours and commits the snapshot that GitHub Pages serves.
 
 ## Layout
@@ -93,6 +108,8 @@ src/clients.mjs    SoSoValue + SoDEX HTTP clients (timeouts, retries)
 src/signals.mjs    pure factor functions and the composite signal
 src/risk.mjs       position sizing and guards
 src/execution.mjs  order-book walk, slippage, confirm-before-send tickets
+src/sodex-signer.mjs  SoDEX order builder + EIP-712 signer (spot and perps)
+src/execute.mjs    confirm-before-send CLI: preview or send a signed order to SoDEX testnet
 src/explain.mjs    deterministic plain-English explanations and the desk brief
 src/ledger.mjs     paper track record (mark-to-market of past tickets)
 src/run.mjs        orchestration

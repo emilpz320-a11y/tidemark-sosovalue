@@ -1,5 +1,16 @@
 # Changelog
 
+## Wave 3 update (26 Nov 2026): signed SoDEX execution, 0.4.0
+
+### Added
+- **SoDEX order signer** (`src/sodex-signer.mjs`): builds spot (`batchNewOrder`) and perps (`newOrder`) requests from a confirmed ticket with the exchange filters applied (tick, step, min quantity, min notional, symbol status), and signs them with EIP-712 `ExchangeAction` under the `spot`/`futures` domains (testnet chainId 138565). The `0x01`-typed signature is recovered and checked before sending.
+- **Confirm-before-send CLI** (`npm run execute`): previews by default; `--send` needs the ticket id repeated with `--confirm` and the user's own testnet API key. Only `AWAITING_CONFIRMATION` tickets can be signed; mainnet is refused.
+- **Signed order on the dashboard**: every agent run signs the top ticket with a throwaway key and publishes the request (endpoint, body, EIP-712 domain, payloadHash, signature check) in a new "Signed SoDEX order (testnet)" panel. It is never sent.
+- 8 new tests (29 in total): rounding without float noise, Go-struct field order for spot and perps, refusal of blocked/halted/too-small tickets, payloadHash, signature recovery, determinism, client order ids.
+
+### Changed
+- Workflows install dependencies with `npm ci` (new dependency: `viem`).
+
 ## Wave 3 (Build Phase II): first public release, 0.3.0
 
 Tidemark joins the buildathon in Wave 3, so this wave covers the whole product: concept, build and polish.

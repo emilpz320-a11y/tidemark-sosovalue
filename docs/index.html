@@ -60,6 +60,12 @@
     </section>
 
     <section class="card">
+      <h2>Signed SoDEX order (testnet)</h2>
+      <p class="small muted">The top tradable ticket, turned into the exact EIP-712-signed request SoDEX expects. Each agent run signs it with a throwaway key and never sends it; <code>npm run execute -- --ticket &lt;id&gt; --confirm &lt;id&gt; --send</code> sends it to testnet with your own API key.</p>
+      <div id="execution"></div>
+    </section>
+
+    <section class="card">
       <h2>Macro &amp; risk guardrails</h2>
       <div id="risk" class="risk-grid"></div>
     </section>
@@ -73,6 +79,7 @@
         <li><b>Size</b> with a 1% risk budget, volatility-based stops, position and gross-exposure caps.</li>
         <li><b>Price</b> by walking the live SoDEX order book: spread, slippage, fill ratio. Thin books or high slippage block the ticket.</li>
         <li><b>Confirm</b>: a human approves every ticket. Every run is replayed in the paper track record.</li>
+        <li><b>Sign</b>: a confirmed ticket becomes a LIMIT IOC order, EIP-712-signed for SoDEX (<code>npm run execute</code>); it is sent to testnet only when the user repeats the ticket id.</li>
       </ol>
     </section>
   </main>

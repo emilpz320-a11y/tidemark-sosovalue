@@ -157,3 +157,6 @@ td.num, th.num { text-align: right; }
   .badges { align-items: start; flex-direction: row; flex-wrap: wrap; }
   .signals, .tickets { grid-template-columns: 1fr; }
 }
+
+#execution dl.kv dd { text-align: left; word-break: break-all; }
+#execution code { font-size: .8rem; }

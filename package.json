@@ -1,13 +1,19 @@
 {
   "name": "tidemark",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "Agentic rotation desk on SoSoValue data with SoDEX-priced, confirm-before-send tickets",
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "agent": "node src/run.mjs",
+    "execute": "node src/execute.mjs",
     "test": "node --test \"test/*.test.mjs\""
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.58.7"
+  }
 }

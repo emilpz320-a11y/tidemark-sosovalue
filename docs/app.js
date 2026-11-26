@@ -240,12 +240,36 @@ function renderRisk(d) {
   );
 }
 
+function renderExecution(x) {
+  if (!x || !x.status) { $('#execution').replaceChildren(h('p', { class: 'empty' }, 'No signed preview in this run yet.')); return; }
+  if (x.status === 'NO_TICKET' || x.status === 'REFUSED') {
+    $('#execution').replaceChildren(h('p', { class: 'empty' }, x.status === 'NO_TICKET' ? x.note : `Refused before signing: ${(x.reasons ?? []).join('; ')}`));
+    return;
+  }
+  const o = x.order;
+  const side = o.side === 1 ? 'BUY' : 'SELL';
+  $('#execution').replaceChildren(
+    h('dl', { class: 'kv' },
+      h('dt', {}, 'Ticket'), h('dd', {}, `${x.ticket.id} · ${side} ${x.ticket.symbol} (${x.market})`),
+      h('dt', {}, 'Order'), h('dd', {}, `LIMIT IOC ${o.quantity} @ ${o.price} ≈ ${fmt.usd(x.orderNotional, 2)}`),
+      h('dt', {}, 'Exchange filters'), h('dd', {}, `tick ${x.filters.tickSize} · step ${x.filters.stepSize} · min notional ${x.filters.minNotional}`),
+      h('dt', {}, 'Endpoint'), h('dd', {}, `${x.request.method} ${x.request.url}`),
+      h('dt', {}, 'EIP-712 domain'), h('dd', {}, `${x.eip712Domain.name} v${x.eip712Domain.version} · chainId ${x.eip712Domain.chainId}`),
+      h('dt', {}, 'payloadHash'), h('dd', {}, h('code', {}, x.payloadHash)),
+      h('dt', {}, 'Signature'), h('dd', {}, `${x.request.headers['X-API-Sign']} · signer recovered ${x.signatureSelfCheck ? '✓' : '✗'}`),
+      h('dt', {}, 'Status'), h('dd', {}, `${x.status} · ${x.keyMode}`),
+    ),
+    h('p', { class: 'small muted' }, `Signed ${new Date(x.generatedAt).toLocaleString()} · the body is sent exactly as signed; only AWAITING_CONFIRMATION tickets can be signed.`),
+  );
+}
+
 async function load() {
   try {
     const bust = `?t=${Math.floor(Date.now() / 60000)}`;
-    const [d, history] = await Promise.all([
+    const [d, history, execution] = await Promise.all([
       fetch(`data/latest.json${bust}`).then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }),
       fetch(`data/history.json${bust}`).then((r) => (r.ok ? r.json() : { runs: [] })).catch(() => ({ runs: [] })),
+      fetch(`data/execution.json${bust}`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ]);
     renderMeta(d);
     renderBrief(d);
@@ -254,6 +278,7 @@ async function load() {
     renderTrack(d);
     renderBlotter(d);
     renderRisk(d);
+    renderExecution(execution);
     document.querySelectorAll('.filters .chip').forEach((b) => b.addEventListener('click', () => {
       currentFilter = b.dataset.filter;
       document.querySelectorAll('.filters .chip').forEach((x) => {
