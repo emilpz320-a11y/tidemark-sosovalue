@@ -1,52 +1,52 @@
 {
-  "generatedAt": "2026-11-26T13:32:35.416Z",
+  "generatedAt": "2026-11-26T19:10:46.121Z",
   "network": "testnet",
   "ticket": {
-    "id": "tm-ec360621",
-    "asset": "SOL",
-    "side": "BUY",
-    "symbol": "SOL-USD",
-    "notional": 216.67,
-    "limitPrice": 70.95,
-    "slippageBps": 0.7
+    "id": "tm-d0c03fa4",
+    "asset": "BTC",
+    "side": "SELL",
+    "symbol": "BTC-USD",
+    "notional": 1059.6,
+    "limitPrice": 60502,
+    "slippageBps": 0.1
   },
   "market": "perps",
   "filters": {
-    "symbolID": 4,
-    "tickSize": "0.01",
-    "stepSize": "0.001",
-    "minQuantity": "0.001",
+    "symbolID": 1,
+    "tickSize": "1",
+    "stepSize": "0.00001",
+    "minQuantity": "0.00001",
     "minNotional": "10"
   },
   "status": "SIGNED_PREVIEW",
   "keyMode": "ephemeral key generated for this preview (not registered, never sent)",
   "order": {
-    "clOrdID": "tm-ec360621",
+    "clOrdID": "tm-d0c03fa4",
     "modifier": 1,
-    "side": 1,
+    "side": 2,
     "type": 1,
     "timeInForce": 3,
-    "price": "70.95",
-    "quantity": "3.053",
+    "price": "60502",
+    "quantity": "0.01751",
     "reduceOnly": false,
     "positionSide": 1
   },
-  "orderNotional": 216.61,
+  "orderNotional": 1059.39,
   "request": {
     "method": "POST",
     "url": "https://testnet-gw.sodex.dev/api/v1/perps/trade/orders",
     "body": {
       "accountID": 0,
-      "symbolID": 4,
+      "symbolID": 1,
       "orders": [
         {
-          "clOrdID": "tm-ec360621",
+          "clOrdID": "tm-d0c03fa4",
           "modifier": 1,
-          "side": 1,
+          "side": 2,
           "type": 1,
           "timeInForce": 3,
-          "price": "70.95",
-          "quantity": "3.053",
+          "price": "60502",
+          "quantity": "0.01751",
           "reduceOnly": false,
           "positionSide": 1
         }
@@ -55,18 +55,18 @@
     "headers": {
       "Content-Type": "application/json",
       "Accept": "application/json",
-      "X-API-Nonce": "1795699955798",
-      "X-API-Sign": "0x01e2ef6afcf5681e…",
+      "X-API-Nonce": "1795720246525",
+      "X-API-Sign": "0x01a1ea08efa851d8…",
       "X-API-Key": "preview-key"
     }
   },
-  "payloadHash": "0x50ae4e37ff420b6052d792e76f9d557e72b059ac973befeae0170c6d2a93e52d",
+  "payloadHash": "0x720b80914055f5d79ff2175e9180f8b13509dfe740757f7a4692554408a76a56",
   "eip712Domain": {
     "name": "futures",
     "version": "1",
     "chainId": 138565,
     "verifyingContract": "0x0000000000000000000000000000000000000000"
   },
-  "signer": "0xFe0c18775E695bE764A1dfd707DfA4d38Cc0a996",
+  "signer": "0x9838a45E892534D56c932caF2c8f0dBc0212b9b7",
   "signatureSelfCheck": true
 }
