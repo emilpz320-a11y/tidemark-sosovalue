@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-26T19:10:46.121Z",
+  "generatedAt": "2026-11-27T01:30:15.322Z",
   "network": "testnet",
   "ticket": {
-    "id": "tm-d0c03fa4",
+    "id": "tm-3cb2c995",
     "asset": "BTC",
     "side": "SELL",
     "symbol": "BTC-USD",
-    "notional": 1059.6,
-    "limitPrice": 60502,
+    "notional": 1172.53,
+    "limitPrice": 60730,
     "slippageBps": 0.1
   },
   "market": "perps",
@@ -21,17 +21,17 @@
   "status": "SIGNED_PREVIEW",
   "keyMode": "ephemeral key generated for this preview (not registered, never sent)",
   "order": {
-    "clOrdID": "tm-d0c03fa4",
+    "clOrdID": "tm-3cb2c995",
     "modifier": 1,
     "side": 2,
     "type": 1,
     "timeInForce": 3,
-    "price": "60502",
-    "quantity": "0.01751",
+    "price": "60730",
+    "quantity": "0.01930",
     "reduceOnly": false,
     "positionSide": 1
   },
-  "orderNotional": 1059.39,
+  "orderNotional": 1172.09,
   "request": {
     "method": "POST",
     "url": "https://testnet-gw.sodex.dev/api/v1/perps/trade/orders",
@@ -40,13 +40,13 @@
       "symbolID": 1,
       "orders": [
         {
-          "clOrdID": "tm-d0c03fa4",
+          "clOrdID": "tm-3cb2c995",
           "modifier": 1,
           "side": 2,
           "type": 1,
           "timeInForce": 3,
-          "price": "60502",
-          "quantity": "0.01751",
+          "price": "60730",
+          "quantity": "0.01930",
           "reduceOnly": false,
           "positionSide": 1
         }
@@ -55,18 +55,18 @@
     "headers": {
       "Content-Type": "application/json",
       "Accept": "application/json",
-      "X-API-Nonce": "1795720246525",
-      "X-API-Sign": "0x01a1ea08efa851d8…",
+      "X-API-Nonce": "1795743015978",
+      "X-API-Sign": "0x013f227e777090d1…",
       "X-API-Key": "preview-key"
     }
   },
-  "payloadHash": "0x720b80914055f5d79ff2175e9180f8b13509dfe740757f7a4692554408a76a56",
+  "payloadHash": "0xbbad7fe6961bf892910da7cbf4a491e7851ee4b94644a30fc725977894b9aaee",
   "eip712Domain": {
     "name": "futures",
     "version": "1",
     "chainId": 138565,
     "verifyingContract": "0x0000000000000000000000000000000000000000"
   },
-  "signer": "0x9838a45E892534D56c932caF2c8f0dBc0212b9b7",
+  "signer": "0x72974EFc16EF33531Ee6e2c2eFfE3A6FACBeF6ef",
   "signatureSelfCheck": true
 }
