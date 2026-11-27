@@ -1,6 +1,72 @@
 {
-  "generatedAt": "2026-11-27T07:32:18.810Z",
+  "generatedAt": "2026-11-27T13:27:39.778Z",
   "network": "testnet",
-  "status": "NO_TICKET",
-  "note": "no AWAITING_CONFIRMATION ticket in this run"
+  "ticket": {
+    "id": "tm-1f045926",
+    "asset": "BTC",
+    "side": "SELL",
+    "symbol": "BTC-USD",
+    "notional": 701.75,
+    "limitPrice": 61414,
+    "slippageBps": 0.1
+  },
+  "market": "perps",
+  "filters": {
+    "symbolID": 1,
+    "tickSize": "1",
+    "stepSize": "0.00001",
+    "minQuantity": "0.00001",
+    "minNotional": "10"
+  },
+  "status": "SIGNED_PREVIEW",
+  "keyMode": "ephemeral key generated for this preview (not registered, never sent)",
+  "order": {
+    "clOrdID": "tm-1f045926",
+    "modifier": 1,
+    "side": 2,
+    "type": 1,
+    "timeInForce": 3,
+    "price": "61414",
+    "quantity": "0.01142",
+    "reduceOnly": false,
+    "positionSide": 1
+  },
+  "orderNotional": 701.35,
+  "request": {
+    "method": "POST",
+    "url": "https://testnet-gw.sodex.dev/api/v1/perps/trade/orders",
+    "body": {
+      "accountID": 0,
+      "symbolID": 1,
+      "orders": [
+        {
+          "clOrdID": "tm-1f045926",
+          "modifier": 1,
+          "side": 2,
+          "type": 1,
+          "timeInForce": 3,
+          "price": "61414",
+          "quantity": "0.01142",
+          "reduceOnly": false,
+          "positionSide": 1
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "X-API-Nonce": "1795786060235",
+      "X-API-Sign": "0x01e247f908396ded…",
+      "X-API-Key": "preview-key"
+    }
+  },
+  "payloadHash": "0x516353f8496a74132fe9c607b56a1ee6ea4d58ccf22b87f48e89916744ec9348",
+  "eip712Domain": {
+    "name": "futures",
+    "version": "1",
+    "chainId": 138565,
+    "verifyingContract": "0x0000000000000000000000000000000000000000"
+  },
+  "signer": "0xEf6a9f77b31F110E93eEFACCaDc7CF8A22F890ac",
+  "signatureSelfCheck": true
 }
